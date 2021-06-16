@@ -1,4 +1,5 @@
 var hello = {};
+
 $(document).ready(function(){
     hello.init();
 });
@@ -6,7 +7,7 @@ $(document).ready(function(){
 hello.init = function(){
     $('#btn').click(function(){
         $.ajax({
-            url : "http://localhost:8080/api/hello/hello",
+            url : ctxPath + "/api/hello/hello",
             type : "GET",
             // data : JSON.stringify({
             //     run_date : $('#run_date').val()

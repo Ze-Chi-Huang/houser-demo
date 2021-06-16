@@ -10,7 +10,11 @@
     <title>helloworld</title>
 </head>
 <body>
-    
+    <script type="text/javascript" th:inline="javascript">
+	   /*<![CDATA[*/
+	   ctxPath = /*[[@{/}]]*/ '';
+	   /*]]>*/
+	</script>
     <button id='btn'>點我顯示hello 資料</button>
     <div id='helloDiv'></div>
 
